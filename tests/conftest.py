@@ -84,3 +84,12 @@ async def setup_psycopg3(pg_dsn):
     pool = PoolManager(dsn=pg_dsn, fallback_master=True)
     yield pool
     await pool.close()
+
+
+@asynccontextmanager
+async def setup_psqlpy(pg_dsn):
+    from hasql.psqlpy import PoolManager
+
+    pool = PoolManager(dsn=pg_dsn, fallback_master=True)
+    yield pool
+    await pool.close()

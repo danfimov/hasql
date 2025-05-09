@@ -54,11 +54,15 @@ setup(
         "psycopg": [
             "psycopg[pool]>=3,<4"
         ],
+        "psqlpy": [
+            "psqlpy"
+        ],
         "test": [
             "async_timeout",
             "psycopg[pool]>=3.0,<4",
             "aiopg[sa]~=1.4.0",
             "asyncpg~=0.29.0",
+            "psqlpy~=0.10.1",
             "pytest~=6.2.5",
             "pytest-cov~=3.0.0",
             "aiomisc~=15.2.4",
@@ -70,6 +74,7 @@ setup(
             "psycopg[pool]>=3.0,<4",
             "aiopg[sa]~=1.4.0",
             "asyncpg~=0.27.0",
+            "psqlpy~=0.10.1",
             "pytest~=6.2.5",
             "pytest-cov~=3.0.0",
             "pylama~=7.7.1",
