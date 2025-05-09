@@ -8,6 +8,7 @@ from tests.conftest import (
     setup_asyncpg,
     setup_asyncsqlalchemy,
     setup_psycopg3,
+    setup_psqlpy,
 )
 
 
@@ -19,6 +20,7 @@ from tests.conftest import (
         (setup_asyncpg),
         (setup_asyncsqlalchemy),
         (setup_psycopg3),
+        (setup_psqlpy),
     ],
 )
 async def test_hasql_context_metrics(pool_manager_factory, pg_dsn):
@@ -57,6 +59,7 @@ async def test_hasql_context_metrics(pool_manager_factory, pg_dsn):
         (setup_asyncpg),
         (setup_asyncsqlalchemy),
         (setup_psycopg3),
+        (setup_psqlpy),
     ],
 )
 async def test_hasql_metrics(pool_manager_factory, pg_dsn):
@@ -97,6 +100,7 @@ async def test_hasql_metrics(pool_manager_factory, pg_dsn):
         (setup_asyncpg),
         (setup_asyncsqlalchemy),
         (setup_psycopg3),
+        (setup_psqlpy),
     ],
 )
 async def test_hasql_close_metrics(pool_manager_factory, pg_dsn):
